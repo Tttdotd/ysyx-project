@@ -4,7 +4,7 @@
 # Execute this makefile from the object directory:
 #    make -f Vtop.mk
 
-default: /home/tdotd/ysyx-project/hdl/work4/build/top
+default: /home/tdotd/ysyx-project/hdl/LFSR/build/top
 
 ### Constants...
 # Perl executable (from $PERL)
@@ -55,8 +55,8 @@ VM_USER_CLASSES = \
 
 # User .cpp directories (from .cpp's on Verilator command line)
 VM_USER_DIR = \
-	/home/tdotd/ysyx-project/hdl/work4/build \
-	/home/tdotd/ysyx-project/hdl/work4/csrc \
+	/home/tdotd/ysyx-project/hdl/LFSR/build \
+	/home/tdotd/ysyx-project/hdl/LFSR/csrc \
 
 
 ### Default rules...
@@ -68,13 +68,13 @@ include $(VERILATOR_ROOT)/include/verilated.mk
 ### Executable rules... (from --exe)
 VPATH += $(VM_USER_DIR)
 
-auto_bind.o: /home/tdotd/ysyx-project/hdl/work4/build/auto_bind.cpp
+auto_bind.o: /home/tdotd/ysyx-project/hdl/LFSR/build/auto_bind.cpp
 	$(OBJCACHE) $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(OPT_FAST) -c -o $@ $<
-sim_main.o: /home/tdotd/ysyx-project/hdl/work4/csrc/sim_main.cpp
+sim_main.o: /home/tdotd/ysyx-project/hdl/LFSR/csrc/sim_main.cpp
 	$(OBJCACHE) $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(OPT_FAST) -c -o $@ $<
 
 ### Link rules... (from --exe)
-/home/tdotd/ysyx-project/hdl/work4/build/top: $(VK_USER_OBJS) $(VK_GLOBAL_OBJS) $(VM_PREFIX)__ALL.a $(VM_HIER_LIBS)
+/home/tdotd/ysyx-project/hdl/LFSR/build/top: $(VK_USER_OBJS) $(VK_GLOBAL_OBJS) $(VM_PREFIX)__ALL.a $(VM_HIER_LIBS)
 	$(LINK) $(LDFLAGS) $^ $(LOADLIBES) $(LDLIBS) $(LIBS) $(SC_LIBS) -o $@
 
 

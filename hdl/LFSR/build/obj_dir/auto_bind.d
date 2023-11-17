@@ -1,4 +1,4 @@
-auto_bind.o: /home/tdotd/ysyx-project/hdl/work4/build/auto_bind.cpp \
+auto_bind.o: /home/tdotd/ysyx-project/hdl/LFSR/build/auto_bind.cpp \
  /home/tdotd/ysyx-workbench/nvboard/include/nvboard.h \
  /home/tdotd/ysyx-workbench/nvboard/include/configs.h \
  /home/tdotd/ysyx-workbench/nvboard/include/constrs.h \

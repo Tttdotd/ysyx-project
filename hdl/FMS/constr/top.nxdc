@@ -1,0 +1,5 @@
+top=top
+w SW0 
+clk SW2 
+z LD0 
+reset SW1 

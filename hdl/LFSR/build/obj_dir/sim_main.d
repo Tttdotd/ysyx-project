@@ -1,4 +1,4 @@
-sim_main.o: /home/tdotd/ysyx-project/hdl/work4/csrc/sim_main.cpp \
+sim_main.o: /home/tdotd/ysyx-project/hdl/LFSR/csrc/sim_main.cpp \
  /home/tdotd/ysyx-workbench/nvboard/include/nvboard.h \
  /home/tdotd/ysyx-workbench/nvboard/include/configs.h \
  /home/tdotd/ysyx-workbench/nvboard/include/constrs.h \
